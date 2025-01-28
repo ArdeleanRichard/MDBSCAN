@@ -125,7 +125,7 @@ class MDBSCAN:
         return rd
 
     def compute_relative_densities(self, data):
-        rds = np.array([self.compute_relative_density_of_a_point(data[i], data) for i in range(len(X))])
+        rds = np.array([self.compute_relative_density_of_a_point(data[i], data) for i in range(len(data))])
         return rds
 
     def figure3_in_paper(self, X):
